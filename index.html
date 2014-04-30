@@ -1,0 +1,1659 @@
+<!DOCTYPE html> 
+<!--                                                                                                
+________                                  _____       .___              
+\______ \ _____    ____       .__        /  _  \    __| _/__  _______   
+ |    |  \\__  \  /    \    __|  |___   /  /_\  \  / __ |\  \/ /\__  \  
+ |    `   \/ __ \|   |  \  /__    __/  /    |    \/ /_/ | \   /  / __ \_
+/_______  (____  /___|  /     |__|     \____|__  /\____ |  \_/  (____  /
+        \/     \/     \/                       \/      \/            \/ 
+
+        STOP LOOKING AT THE CODE: WANT SOMETHING LIKE THIS? 
+        DROP US A LINE hi@adva.io | info@danielemeli.com
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mozambique, trapped between development and post-land grabbing">
+    <meta name="author" content="Dan & Adva">
+
+    <meta property="og:url" content=""/>
+    <meta property="og:title" content="Promised Land"/>
+    <meta property="og:description" content="Mozambique, trapped between development and post-land grabbing" />
+    <meta property="og:image" content="/images/slide_13_cover.jpg" />
+    <meta name="keywords" content="" />
+
+    <link rel="canonical" href="www.miosito.it/" />
+
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+	<title>Report of Land Grabbing in Mozambico</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+ 	<!--- ===-======-======-======-=== Stylesheets for map ===-======-======-======-======-===-->
+
+    <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/leaflet.fullscreen.css">
+    <link rel='stylesheet' href="css/mapbox.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" >
+
+    <!--- ===-======-======-======-=== Style sheets ===-======-======-======-======-===-->
+    
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400,300,100' rel='stylesheet' type='text/css'>
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/video-js.css" rel="stylesheet">
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    
+    <![endif]-->
+
+<script type="text/javascript">
+
+	if( (navigator.userAgent.match(/Android/i)) ||
+		(navigator.userAgent.match(/webOS/i)) ||
+		(navigator.userAgent.match(/iPhone/i)) ||
+		(navigator.userAgent.match(/iPad/i)) ||
+		(navigator.userAgent.match(/iPod/i)) ||
+		(navigator.userAgent.match(/BlackBerry/i)) ||
+		(navigator.userAgent.match(/IEMobile/i)) ||
+		(navigator.userAgent.match(/Opera Mini/i)))
+	{
+		location.replace("mobile.html");
+	}
+	</script>
+
+<!--- ===-======-======-======-=== Js Libraries ===-======-======-======-======-===-->
+	<script src="js/ext/jquery.js"></script>	
+	<script src="js/ext/jquery.resize.min.js"></script>
+	<script src="js/ext/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script src="js/ext/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script src="js/ext/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script src="js/ext/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<script src="js/ext/bootstrap.min.js"></script>
+	<script src="js/ext/skrollr.min.js"></script>
+	<script src="js/ext/mapbox.js"></script>
+	<script src="js/ext/leaflet.awesome-markers.js"></script>
+	<script src="js/ext/Leaflet.fullscreen.js"></script>
+	<script src="js/ext/cartodb.js"></script>
+	<script src="js/ext/json2html.js"></script>
+	<script src="js/ext/jquery.json2html.js"></script>
+	<script src="js/ext/jquery.easing.js"></script>
+	<script src="js/ext/jquery.flexslider-min.js"></script>
+	<script src="js/ext/scrollTo.min.js"></script>
+	<script src="js/ext/oms.min.js"></script>
+	<script src="js/ext/video.js"></script>
+	<script src="js/ext/path.min.js"></script>
+	<script src="js/mozambique-map.js"></script>
+	<script src="js/mozambique-anim.js"></script>	
+	<script src="js/mozambique-videos.js"></script>	
+	<script src="js/mozambique-scroll.js"></script>	
+	<script src="js/mozambique.js"></script>
+
+  </head>
+
+  <body>
+
+  	<script type="text/javascript">
+    $( document ).ready( function(){
+        $('#mdleftheader').on('click','.toggleButton',function () {
+        $('.toggleButton').removeClass('toggleButtonSelected');
+        $(this).addClass('toggleButtonSelected')
+        });
+    });
+    </script>
+
+
+	<div id="pnf_preloader">
+		<div style="font-size:68px; margin-left:40%; line-height:60px; font-weight:100; margin-top:10%;">
+				<b>PROMISED</b><br>LAND
+			<div style="font-size:16px; line-height:18px;">
+				Mozambique, trapped between development <br>and post-land grabbing
+			</div>
+		</div>
+		
+
+
+		<center style="padding-top:4%;">
+			<h2>Loading..</h2>
+			<!--<object type="image/svg+xml" data="images/mappa.svg">
+				Your browser does not support SVG
+			</object>-->
+			<svg version="1.1" id="path" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="170.555px" height="269.443px" viewBox="0 0 170.555 269.443" enable-background="new 0 0 170.555 269.443"
+	 xml:space="preserve">
+	 
+	<path class="path" id="bordo" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M77.477,110.37
+		c2.063-1.686,2.021-2.02-0.21-3.042c-0.333-0.153-0.59-0.483-0.862-0.75c-2.772-2.721-5.572-5.413-8.279-8.197
+		c-0.417-0.429-0.73-1.432-0.518-1.913c0.66-1.48-0.289-2.231-1.175-2.832c-1.788-1.211-1.115-2.132,0.005-3.333
+		c0.734-0.787,1.217-1.838,1.696-2.826c0.408-0.842,0.509-1.854,1.001-2.629c0.789-1.246,1.202-2.379,1.229-3.981
+		c0.046-2.542-0.447-4.905-0.867-7.357c-0.563-3.297-1.762-4.421-4.935-3.82c-1.331,0.252-2.71,0.303-4.009,0.657
+		c-1.385,0.378-2.7,1.008-4.046,1.528c0.273-0.156,0.549-0.313,0.824-0.47c-1.169-0.748-2.53-1.314-3.456-2.293
+		c-1.145-1.208-2.534-2.682-2.727-4.18c-0.312-2.457-1.324-2.083-2.902-1.527c-5.186,1.826-10.407,3.545-15.573,5.421
+		c-3.403,1.234-6.691,2.792-10.106,3.986c-5.034,1.762-10.166,3.249-15.201,5.005c-3.034,1.06-3.226,2.531-1.182,5.177
+		c0.655,0.848,1.046,2.033,1.192,3.114c0.352,2.607,0.487,5.245,0.743,8.239c3.444-0.792,6.772,0.835,10.253-0.087
+		c0.905-0.24,2.141,0.544,3.16,1.002c1.369,0.615,2.668,1.389,4.015,2.058c1.081,0.537,2.559,0.735,3.212,1.583
+		c1.702,2.208,3.869,2.148,6.306,2.403c2.365,0.247,5.247,1.012,6.721,2.627c1.209,1.327,2.137,1.457,3.49,1.551
+		c0.287,0.021,0.57,0.094,1.282,0.215c-0.72,1.37-1.335,2.538-1.99,3.783c2.094,3.207,3.128,6.188,1.812,8.766
+		c0.306,1.241,0.792,2.682,0.327,3.679c-1.351,2.892-0.688,5.702,0.08,8.412c0.599,2.113,0.219,3.312-2.034,3.988
+		c0.368,0.854,0.912,1.552,0.896,2.235c-0.017,0.677-0.624,1.932-0.929,1.918c-2.865-0.123-2.375,1.755-2.052,3.269
+		c0.916,0.619,1.899,1.309,1.961,2.07c0.084,1.062-0.539,2.177-0.828,3.276c-0.151,0.576-0.444,1.223-0.311,1.744
+		c0.305,1.19,0.833,2.325,1.312,3.589c0.272-0.02,0.846-0.246,1.146-0.051c1.645,1.071,1.724,4.411,0.276,5.833
+		c-0.66,0.649-1.48,1.404-1.654,2.23c-0.604,2.885-1.589,5.304-4.68,6.391c-0.479,0.168-0.754,1.335-0.852,2.076
+		c-0.198,1.491,0.34,3.423-0.416,4.428c-1.392,1.852-1.374,3.258-0.25,4.569c-5.783,6.19-11.461,12.27-17.149,18.357
+		c1.041,3.251,2.128,6.484,3.109,9.751c0.942,3.144-0.135,6.837,2.606,9.51c0.22,0.213,0.066,0.768,0.189,1.126
+		c0.248,0.729,0.387,1.608,0.885,2.121c2.868,2.955,3.248,6.773,3.705,10.524c0.308,2.531,0.341,5.104,0.357,7.66
+		c0.013,2.006-0.104,4.021-0.315,6.018c-0.247,2.312-0.787,4.598-0.936,6.911c-0.051,0.783,0.725,1.61,1.09,2.431
+		c0.437,0.979,1.119,1.951,1.205,2.968c0.295,3.467,0.374,6.95,0.546,10.642c3.779,0,7.304,0,10.999,0
+		c0.343-3.775,0.688-7.568,1.031-11.362c-0.158-0.042-0.317-0.084-0.478-0.126c-0.295,0.859-0.591,1.719-1.054,3.063
+		c-1.55-1.805-2.886-3.357-4.072-4.738c0.95-1.452,2.038-2.567,2.469-3.896c0.722-2.225,2.015-3.838,3.979-4.934
+		c2.368-1.321,4.708-2.759,7.216-3.752c6.266-2.479,12.534-5.017,18.965-6.999c5.302-1.634,8.331-5.46,10.914-9.789
+		c0.941-1.577,0.902-3.739,1.311-5.635c-0.221-0.113-0.44-0.228-0.661-0.34c-0.936,0.866-1.869,1.731-2.775,2.571
+		c1.157-5.092,2.362-10.39,3.654-16.069c-2.973-3.582,1.076-8.487-1.254-12.77c-0.443,0.593-0.854,1.139-1.38,1.843
+		c-0.384-0.506-0.77-0.779-0.8-1.089c-0.479-4.834-1.152-9.573-4.036-13.739c-0.614-0.89-0.962-2.439-0.634-3.418
+		c1.02-3.042-0.242-5.786-3.336-6.261c0.74-2.527-1.956-1.604-2.708-2.606c0.347-0.405,0.839-0.729,0.918-1.131
+		c0.141-0.712-0.085-1.492,0.043-2.208c0.209-1.158,0.841-2.289,0.826-3.427c-0.027-2.211,0.932-4.751-1.562-6.391
+		c-0.023-0.016,0.099-0.253,0.23-0.584c1.165,1.017,2.279,1.99,3.389,2.959c4.882-2.613,8.153-6.997,11.9-10.907
+		c1.533-1.601,3.734-2.604,5.722-3.717c1.947-1.091,5.222-0.435,5.146-4.075c-0.001-0.056,0.097-0.114,0.148-0.172
+		c2.381-2.567,4.801-5.1,7.108-7.729c0.55-0.626,0.724-1.582,1.14-2.548c0.377-0.277,1.043-0.663,1.578-1.185
+		c0.772-0.753,1.311-1.832,2.192-2.375c3.951-2.431,8.001-4.701,11.982-7.082c0.684-0.408,1.212-1.074,1.669-1.492
+		c0.483,0.054,1.022,0.267,1.463,0.138c3.307-0.979,6.6-2.001,9.882-3.059c1.137-0.366,2.368-0.67,3.316-1.341
+		c1.598-1.127,2.915-2.649,4.512-3.779c2.133-1.511,4.419-2.806,6.584-4.159c-0.294-0.951-0.515-1.663-0.726-2.348
+		c0.623-0.542,1.239-1.447,1.633-1.357c2.188,0.49,2.305-1.464,3.115-2.493c0.961-1.221,1.677-2.63,2.57-3.908
+		c1.84-2.631,3.775-5.197,5.561-7.864c0.394-0.586,0.32-1.483,0.481-2.339c-0.971,0.139-1.564,0.224-2.593,0.371
+		c1.546-1.482,2.715-2.603,3.917-3.755c-0.521-0.333-0.883-0.567-0.969-0.622c0.839-0.956,2.016-1.692,2.167-2.602
+		c0.278-1.652-0.053-3.406-0.13-5.118c-0.181-0.125-0.361-0.25-0.543-0.375c-0.715,0.778-1.431,1.559-2.146,2.338
+		c-0.123-0.051-0.247-0.103-0.371-0.152c0.564-1.769,1.132-3.539,1.636-5.112c-1.205-0.102-2.04-0.172-2.821-0.237
+		c0.55-1.274,1.207-2.083,1.169-2.856c-0.089-1.721-0.565-3.42-0.806-5.138c-0.189-1.366-0.339-2.748-0.36-4.124
+		c-0.017-0.936,0.265-1.869,0.33-2.811c0.104-1.45,0.146-2.905,0.188-4.36c0.003-0.084-0.221-0.174-0.463-0.354
+		c-0.317,0.391-0.636,0.781-1.158,1.422c-2.214-3.409,2.655-2.668,2.364-4.711c-0.706-1.408-1.413-2.818-1.809-3.604
+		c-0.203-6.074-0.353-11.644-0.636-17.206c-0.03-0.601-0.84-1.163-1.362-1.838c0.476-0.59,1.032-1.13,1.399-1.778
+		c0.507-0.894,1.439-2.492,1.201-2.709c-1.698-1.553,0.022-2.22,0.691-3.12c-0.554-0.487-1.028-0.907-1.566-1.384
+		c0.66-0.545,1.148-0.949,1.524-1.26c-0.457-1.112-0.846-2.058-1.31-3.186c-1.434,0.832-3.129,1.332-4.089,2.458
+		c-3.86,4.532-10.283,4.577-14.441,8.502c-0.178,0.167-0.607,0.208-0.864,0.127c-3.298-1.025-6.255,0.527-8.599,2.152
+		c-2.294,1.59-3.553,1.336-5.588-0.031c-2.533-1.7-6.027-0.457-6.382,2.236c-0.283,2.152-1.937,2.358-3.208,3.171
+		c-0.486,0.312-1.195,0.26-1.717,0.538c-1.076,0.572-5.25,0.398-6.211-0.343c-1.802-1.391-3.725-1.314-5.427,0.153
+		c-0.396,0.343-0.923,0.757-1.393,0.762c-2.153,0.02-4.312-0.047-6.458-0.214c-0.29-0.023-0.596-0.761-0.771-1.213
+		c-1.14-2.944-4.989-3.696-7.261-1.581c-0.709,0.659-2.01,0.92-3.051,0.946c-4.086,0.104-8.177,0.043-12.241,0.043
+		c-0.92,2.278-1.755,4.615-2.801,6.854c-1.075,2.302-1.274,4.538-0.505,6.984c1.333,4.231,1.721,8.579,1.321,13.019
+		c-0.155,1.736,0.583,3.081,2.647,2.844c1.726-0.198,2.976,0.397,4.018,1.742c3.745,4.83,7.424,9.719,11.334,14.413
+		c2.47,2.965,3.179,5.946,1.454,9.454c-0.258,0.524-0.532,1.267-0.357,1.746c1.402,3.841,0.366,7.683,0.121,11.52
+		c-0.127,1.973-2.947,4.02-4.84,3.363c-1.843-0.639-2.351,0.642-2.817,1.74c-0.737,1.734-1.21,3.582-1.877,5.63
+		c3.396,1.711,1.005,5.188,2.087,8.244C79.635,112.022,77.836,112.999,77.477,110.37z"/>
+</svg>
+	    </center>
+	</div>
+
+	<div id="navigationbar">
+		<div id="progressinactive">
+			<div id="progressbar" data-start="width:0%;" data-end="width:100%;">
+			</div>
+		</div>
+	
+		<div id="testoNavigationBar" >
+			<span id="toggleMenu" onclick="javascript:toggleMenu();">
+				<span class="testoBianco" style="cursor:pointer; font-size:12px !important;">
+					<img style="margin-top:-4px; margin-right:4px;" src="images/index20.png"/>INDEX
+				</span>
+			</span>
+			<span id="titleToolbar">INTRODUCTION</span>
+			<!--  Uncommenting this will make visible the section number and pixels
+			<span id="sectionTracker">section1</span>
+			<span id="scroll-pos">0px ; 0p</span> -->
+			<span style="float:right; margin-right:60px; cursor:pointer;">
+				<a id="ref_fb"  href="http://www.facebook.com/sharer.php?s=100&p[title]=Piemonte DOC(G)&p[summary]=WebDocumentari on the land rush&p[url]=http://www.isaccochiaf.me/docg/&p[images][0]=images/slide_12b_s.jpg" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600'); return false;">
+				<img style="margin-top:-1px;" src="images/fb.png" /></a>
+				<a id="ref_tw" href="http://twitter.com/home?status= The first italian %23Webdoc%23Datadriven on %23landgrabbing" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"><img style="margin-top:-1px; margin-left:-4px;" src="images/tw.png" /></a>
+				 <a id="ref_gp" href="https://plus.google.com/share?url=http://www.isaccochiaf.me/docg/" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false"><img style="margin-top:-1px; margin-left:-4px;" src="images/gp.png" /></a>
+			</span>
+		</div>
+	</div>
+
+
+  	<!-- slides cambio sezione :
+  		Introduction: 1
+  		Mozambico : 5
+  		Investors and communities: 9
+  			Wanabao : 10
+  			Bananalandia : 16
+  			Igo Sammartini 22
+		Pro savana: 26
+
+  	!-->
+
+	
+	<section id="menuSection" onclick="javascript:closeMenu();">
+		<div id="progressinactiveInMenu">
+				<div id="progressbarInMenu" data-start="width:0%;" data-end="width:100%;">
+				</div>
+			</div>
+		<section class="col-slide-30 nav contenutoMenu">
+			<!-- This adds a section indicator built inside the menu
+			<span id="sectionTrackerInMenu">section1</span> 
+			-->
+			<h1 class="ombreggiaturaTesto" id="TitleSiteInMenu" >Promised land</h1>
+			<p  class="vociMenu">Mozambique, trapped between development and post-land grabbing</p>
+			<ul class="margineTopMenu">
+				<a href="javascript:goToSection(1);" id="menu-item-1" title="page1" >
+					<li id="lid1"  class="currentMenuItem">INTRODUCTION</li>
+				</a>
+			</ul>
+
+			<ul>
+				<a href="javascript:goToSection(5);" id="menu-item-2" title="page2" >
+					<li id="lid2">MOZAMBICO <div class="sottotitoloVoceMenu"> The New Eldorado</div></li>
+				</a>
+			</ul>
+
+			<ul>
+				<a href="javascript:goToSection(9);" id="menu-item-3" title="page3" >
+					<li id="lid3">INVESTORS AND COMMUNITIES <div class="sottotitoloVoceMenu"> Bananalandia, Wanbao and Igo Sammartini and the problem of dislocation</div></li>
+				</a>
+					<a href="javascript:goToSection(10);" id="menu-item-4" title="page4">
+						<div id="lid4" class="sottoVoce">Wanbao</div>
+					</a>
+					<a href="javascript:goToSection(16);" id="menu-item-5" title="page5">
+						<div id="lid5" class="sottoVoce">Bananalandia</div>
+					</a>
+					<a href="javascript:goToSection(22);" id="menu-item-6" title="page6">
+						<div id="lid6" class="sottoVoce">Igo Sammartini</div>
+					</a>
+			</ul>
+
+			<ul>
+				<a href="javascript:goToSection(26);" id="menu-item-7" title="page7" >
+					<li id="lid7">PROSAVANA <div class="sottotitoloVoceMenu"> The New Eldorado</div></li>
+				</a>
+			</ul>
+		</section>
+	</section>
+
+	<!--Keyframes1$ VID.BG.TITLE -->
+	<section class="col-sm-12 allPages" id="slide01"
+		data-0="transform:translate(0%, 0%);"
+		data-_pausing1-200p="transform:translate(0%, 0%);"
+		data-_pausing1-300p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<article class="title_with_grid">
+			<header>
+				<h1 class="opacitaTesto titoloHomeH1"><b>PROMISED</b> <br>LAND</h1>
+				<h2>Mozambique, trapped between development <br> and post-land grabbing</h2>
+			</header>
+			
+			<footer  class="col-sm-8 noPadding">
+				
+					<ul>
+						<li class="liFirstElement">Jacopo Ottaviani</li>
+						<li>Andrea Fama</li>
+						<li>Cecilia Anesi</li>
+						<li>Isacco Chiaf</li>
+					</ul>
+				
+			</footer>
+		</article>
+			<video id="video_background" preload="auto" autoplay="true" loop="loop"> 
+				<source src="data/video/def_bg_vid_720.m4v" type="video/mp4"> 
+				<source src="data/video/def_bg_vid_720.webm" type="video/webm"> 
+				Video not supported 
+			</video>
+	</section>
+	<!-- 1 END VID.BG.TITLE -->
+
+
+	<!--Keyframes2$ IMG.FULL.TEXT-SCROLL -->
+	<section id="slide02" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset2-100p= "transform:translate(0%, 0%);"
+		data-_sumoffset2-300p=""
+		data-_sumoffset2-400p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<section class="contentContainer col-sm-4" 
+			data-0="opacity:0;"
+			data-_offset2-20p= "opacity:0;"
+			data-_offset2-100p="top:0%; opacity:1;" 
+			data-_sumoffset2-150p=""
+			data-_sumoffset2-360p="top:-150%">
+			<article>
+				<header>
+					<div class="titleArticle">
+						<h2><b>LAND AQUISITION</b></h2>
+					</div>
+				</header>
+			
+				<div class="articleAbstract">
+	            	When talking about ‘large-scale land acquisitions’, investors adopt optimistic terms like ‘development opportunity’ or ‘win-win perspective’.
+ 				 </div>
+	            
+	            <div class="articleContent">
+	            	On the other hand, civil society labels it negatively, defying it as land grabbing. In the mid, is the academic world of research, that has a more neutral approach to the phenomenon.
+		        
+		         <footer>
+		         	<a href="http://pubs.iied.org/pdfs/17166IIED.pdf" target="_blank">Read the IIED report <i class="fa fa-external-link fa-1"></i></a>
+		         </footer>
+		         
+		        </div>
+
+			</article>
+			
+		</section>
+	</section>
+	<!-- 2 END IMG.FULL.TEXT-SCROLL -->
+
+	<!--Keyframes3$ ANIM.TEXTS -->
+	<section id="slide03" class="col-sm-12 sfondoBianco" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset3-200p =""
+		data-_offset3-300p= "transform:translate(0%, 0%);"
+		data-_sumoffset3-400p=""
+		data-_sumoffset3-500p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+
+	<!--Descrizione animazione :
+	Durata totale (pausing3 =  380p)
+	
+	--> 
+		<section class="contentContainer col-sm-8">
+			<h4> The International <span class="orangebold">Land Coalition’s Tirana Declaration</span> defines ‘land grabbing’ as </h4>
+			
+			<br>
+
+			<h4     data-_offset3-310p="opacity:0;"
+			            data-_offset3-340p="opacity:1;">
+			            Acquisitions or concessions that are one or more of the following:  
+			</h4>
+
+			<br><br>
+			<h3 class="sustainTextSlide03"
+				data-_offset3-300p="opacity:0;" 
+			    	data-_offset3-370p=""
+				data-_offset3-380p="opacity:1;" 
+			 	data-_offset3-440p="" 
+				data-_offset3-445p="opacity:0;"> 
+	            In violation of <span class="orangebold">human rights</span>, particularly the equal rights of women; 
+			</h3>
+
+			<h3 class="sustainTextSlide03"
+				data-_offset3-300p="opacity:0;"
+	            			data-_offset3-440p=""
+			            	data-_offset3-450p="opacity:1;" 
+			            	data-_offset3-510p="" 
+			            	data-_offset3-520p="opacity:0;"> 
+	            Not based on free, prior and informed consent of the <span class="orangebold">affected land users</span>;
+			</h3>
+
+			<h3 class="sustainTextSlide03"
+				data-_offset3-300p="opacity:0;"
+			            	data-_offset3-520p=""
+			            	data-_offset3-530p="opacity:1;"
+			            	data-_offset3-590p=""  
+			            	data-_offset3-600p="opacity:0;"> 
+	            Not based on a <span class="orangebold">through assessment</span>, or are in disregard of social, economic and environmental impacts, including <span class="orangebold">the way they are gendered</span>;
+			</h3>
+
+			<h3 class="sustainTextSlide03"
+				 data-_offset3-300p="opacity:0;"
+				 data-_offset3-600p=""
+			                 data-_offset3-610p="opacity:1;"
+				 data-_offset3-670p=""  
+				 data-_offset3-680p="opacity:0;">  
+	            Not based on <span class="orangebold">transparent contracts</span> that specify clear and binding commitments about activities, employment and benefits sharing; 
+			</h3>
+
+			<h3 class="sustainTextSlide03"
+			   	 data-_offset3-300p="opacity:0;"
+			                 data-_offset3-680p=""
+			                 data-_offset3-690p="opacity:1;" >
+	            Not based on effective <span class="orangebold">democratic planning</span>, independent oversight and meaningful <span class="orangebold">participation</span>.
+			</h3>
+		</section>
+	</section>
+	<!-- 3END ANIM.TEXTS-->
+
+
+	
+	<!--Keyframes4$ ANIM.DOUBLE.TEXT -->
+	<section id="slide04" class="col-sm-12 sfondoBianco" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset4-300p =""
+		data-_offset4-400p= "transform:translate(0%, 0%);"
+		data-_sumoffset4-500p=""
+		data-_sumoffset4-600p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+
+	<section class="contentContainer col-sm-4" id="imgFullTextScroll-text" 
+	data-_offset4-400p="top:0%;" 
+	data-_offset4-800p="top:-180%">
+		<article>
+			<header>
+				<div class="titleArticle">
+					<h2><b>LAND GRABBING DEFINITION</b></h2>
+				</div>
+			</header>
+		
+			<div class="articleAbstract">
+				How many hectares have been leased, in total, since the land rush began?
+			</div>
+		            
+		    <div class="articleContent2">
+				As land grabbing definition is blurred, the same we can say of the physical boundaries of the phenomenon. 
+				How many hectares have been leased, in total, since the rush to land begun? Any attempt of outlining  the actual extension of the large-scale land acquisition will provide a confusinonary set of self-contradicting numbers. The World Bank speaks of 56 million hectares having been leased just from 2008 to 2009 as a consequence of the food-price dropping.
+				Different numbers are given by many sources, while coming by a truth becomes an impossible task. The International Food Policy Institute and the Oakland Institute have counted about 15-20 million hectares leased from 2006 to 2009. In 2011 Land Matrix, a database of large-scale land acquisitions developed by four international research institutes, calculated 227 million hectares of land being leased from the year 2000 onwards. A consistent number, put together by sources that are not always reliable, and which in June 2013, after a re-launch of the database, was downsized to 33 million hectares as a reliable number taken only from signed contracts. That is an area eight times the size of the Netherlands.
+				"It is impossible to state with total certainty that a land acquisition really took place, having which exact surface, which usage and for how much time it is given in concession," state the researchers of Land Matrix. "Because some projects begin, and then they run into different problems and are discontinued and close down, or on the contrary they expand beyond the contracted surfaces."       
+			</div>
+
+		</article>		
+	</section>
+
+
+	<section class="col-sm-5 col-sm-offset-5" >
+   		<h4 style="margin-left:20%; position:absolute; margin-top:60px;" class="ombreggiaturaTesto" 
+       		data-0="opacity:0;"
+       		data-_offset4-410p="" 
+       		data-_offset4-430p="opacity:1;" 
+       		data-_offset4-480p="" 
+       		data-_offset4-490p="opacity:0;">
+       		<p class="testoFadeInDx">
+       			THE WORLD BANK SPEAKS OF <b>56 MILLION</b> HECTARES HAVING BEEN LEASED JUST FROM 2008 TO 2009 AS A CONSEQUENCE OF THE FOOD-PRICE DROPPING.
+       		</p>
+		</h4>
+
+		<h4 style="margin-left:20%; position:absolute; margin-top:60px;" class="ombreggiaturaTesto" 
+       		data-0="opacity:0;"
+       		data-_offset4-480p="" 
+       		data-_offset4-500p="opacity:1;" 
+       		data-_offset4-550p="" 
+       		data-_offset4-560p="opacity:0;">
+       		<p class="testoFadeInDx">
+       			<b>DIFFERENT NUMBERS </b>ARE GIVEN BY MANY SOURCES, WHILE COMING BY A TRUTH BECOMES AN IMPOSSIBLE TASK.
+       		</p>
+		</h4>
+
+
+		<h4 style="margin-left:20%; position:absolute; margin-top:60px;" class="ombreggiaturaTesto" 
+       		data-0="opacity:0;"
+       		data-_offset4-550p="" 
+       		data-_offset4-560p="opacity:1;" 
+       		data-_offset4-610p="">
+       		<p class="testoFadeInDx">
+       			"IT IS IMPOSSIBLE TO STATE WITH TOTAL CERTAINTY THAT A <b>LAND ACQUISITION REALLY TOOK PLACE</b>, HAVING WHICH EXACT SURFACE, WHICH USAGE AND FOR HOW MUCH TIME IT IS GIVEN IN <b>CONCESSION</b>"
+       		</p>
+		</h4>	       		
+    </section>
+</section>
+
+	<!-- 4 END ANIM.DOUBLE.TEXT -->
+	
+
+
+	<!--Keyframes5$ VID.BG.TITLE -->
+	<section class="col-sm-12 allPages" id="slide05"
+		data-0="transform:translate(0%, 100%);"
+		data-_offset5-400p =""
+		data-_offset5-500p= "transform:translate(0%, 0%);"
+		data-_sumoffset5-600p=""
+		data-_sumoffset5-700p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<article class="title_one">
+			<header>
+				<h1 class="opacitaTesto titoloHomeH1"><b>MOZAMBIQUE</b></h1>
+				<h2>The Eldorado of land</h2>
+			</header>
+		</article>
+			<video id="video_background" preload="auto" autoplay="true" loop="loop"> 
+				<source src="data/video/bg_vid_720.m4v" type="video/mp4"> 
+				<source src="data/video/bg_vid_720.webm" type="video/webm"> 
+				Video not supported 
+			</video>
+	</section>
+	<!-- 5 END VID.BG.TITLE -->
+
+
+	<!--Keyframes6$ INTRO-->
+  	<section id="slide06" class="col-sm-12 allPages sfondoBiancoSemplice"
+		data-0="transform:translate(0%, 100%);"
+		data-_offset6-500p =""
+		data-_offset6-600p= "transform:translate(0%, 0%);"
+		data-_sumoffset6-700p=""
+		data-_sumoffset6-800p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<div class="testoSempliceSlide06 col-md-12">
+			<p
+				data-0="opacity:0;"
+				data-_offset6-550p="opacity:0;"
+				data-_offset6-600p="opacity:1;">
+			
+			<span class="testoArancio">Mozambique </span>is a country of Sub Saharan<br>
+			 Africa where lands are the fulcrum of <br>
+			 crucial international investments. <br>
+			 Here,  land is <span class="testoArancio">state-owned</span> and only given<br>
+			 in lease. Price can get as down as<br>
+			 a <span class="testoArancio">$1 per hectare </span> per year-lease. <br>
+			 Concessions are renewable, and can get up to  <br>
+			99-year lease. <br>
+			Land Matrix calculated <span class="testoArancio">117 land acquisitions</span> <br>
+			in the country. Available data show that 66% of  <br>
+			Mozambique’s land lease, basically 77 <br>
+			contracts, sum up to 2.4 million hectares.
+			</p>
+		</div>
+	</section>
+	<!-- 6 END INTRO -->
+
+
+	<!--Keyframes7$ IMG.GALLERY-TRANS-->
+	<section id="slide07" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset7-600p =""
+		data-_offset7-700p= "transform:translate(0%, 0%);"
+		data-_sumoffset7-900p=""
+		data-_sumoffset7-1000p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<section class="title_with_grid flexslider2 sfondoBiancoSlider">
+			<ul class="slides">
+			    <li id="liSlide07img01"><img src="images/slide07imgVuota.png" alt="Slide" /> </li>
+			    <li id="liSlide07img02"><img src="images/slide07imgVuota.png" alt="Slide" /> </li>
+			    <li id="liSlide07img03"><img src="images/slide07imgVuota.png" alt="Slide" /> </li>
+			</ul>
+		</section>	
+	</section>
+	<!-- 7 END IMG.GALLERY-TRANS-->
+
+
+	<!--Keyframes8$ IMG.FULL.TEXT-->
+	<section id="slide08" class="col-sm-12 allPages sfondoBiancoSemplice" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset8-700p =""
+		data-_offset8-800p= "transform:translate(0%, 0%);"
+		data-_sumoffset8-900p=""
+		data-_sumoffset8-1000p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<section class="contentContainer col-sm-4"
+			data-_offset8-800p="top:0%;"
+			data-_offset8-1100p="top:-240%">
+			
+			<article id="slide08textid">
+			
+				<div class="articleAbstract">
+        			According to the Mozambican Ministry of Agriculture, only 10% of its 36 million hectares of arable land is cultivated. 
+ 				</div>
+	            
+            	<div class="articleContent3">
+	            	However, several experts agree on, rarely land is actually unutilised or free as stated by  international authorities and private corporation’s reports. Rather, it is used by rural communities which apply family farming models of self-subsistance, and large-scale land acquisitions always cause high environmental and social impact.
+					<img src="images/slide08_pie.png" />
+				
+	            	Article 109 of the Mozambican Constitution rules "Mozambican land is for the Mozambican people to use." Adding to that, the law of the country sets for three popular consultations to take place before a slot land is allocated to a private investor. Sadly, several cases have been reported where this is not respected, as denounced by Mozambican NGOs.<br><br>
+
+	            	But as in most African countries, the Government attitude lacks transparency, both at national and local levels, and private interests end up prevailing on the common good, even in those situations in which they could come together.
+	            	<br><br>
+
+
+					Corruption is a reported issue, and Mozambique ranks 119th in Transparency International’s corruption index out of 177 countries. 
+				</div>
+
+
+
+			</article>
+			
+		</section>
+	</section>
+	<!-- 8 END IMG.FULL.TEXT-->
+
+	<!--Keyframes9$ ANIM.IMAGES -->
+	 <section id="slide09" class="col-sm-12 sfondoBianco"
+		data-0="transform:translate(0%, 100%);"
+		data-_offset9-800p =""
+		data-_offset9-900p= "transform:translate(0%, 0%);"
+		data-_sumoffset9-1000p=""
+		data-_sumoffset9-1100p="transform:translate(0%, -150%);">
+	 <!--keyframestop--> 
+	 	<section class="contentContainerSlide09">
+	 		<h4>IN ORTHER TO BETTER UNDERSTAND THE DINAMIC<br> OF LAND ACQUISITION, WE ANALYSED 3<br> DIFFERENT CASES IN MOZAMBICO.</h4>
+		</section>
+
+	       <section class="" 
+	       data-_offset9-800p="top:0%;" 
+	       data-_offset9-900p="top:-100%">	       
+	            
+	            <div style="margin-top:4%;">
+	            	<img style="position:absolute; margin-left:20%;" src="images/mozamb_map_sfondo_slide09.png" />
+	            </div>
+	            
+	            <div style="margin-top:4%;">
+	            	<img style="position:absolute;  margin-left:20%;"
+	           		data-_offset9-900p="opacity:0;" 
+	           		data-_offset9-930p="opacity:1;" src="images/mozamb_map_img01_slide09.png" />
+	            </div>
+	            
+	            <div style="margin-top:4%;">
+	            	<img style="position:absolute;  margin-left:20%;"
+	            	data-_offset9-930p="opacity:0;" 
+	            	data-_offset9-960p="opacity:1;" src="images/mozamb_map_img02_slide09.png" />
+	            </div>
+	      
+	            <div style="margin-top:4%;">
+	      		    <img style="position:absolute;  margin-left:20%;"
+	      		    data-_offset9-960p="opacity:0;" 
+	      		    data-_offset9-990p="opacity:1;" src="images/mozamb_map_img03_slide09.png" />
+	        	</div>
+	            
+
+	    </section>
+	</section>
+	<!-- 9 END ANIM.IMAGES-->
+
+
+	<!--Keyframes10$ IMG.FULL TO REDO-->
+	<section id="slide10" class="col-sm-12 allPages sfondoBianco" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset10-900p =""
+		data-_offset10-1000p= "transform:translate(0%, 0%);"
+		data-_sumoffset10-1100p=""
+		data-_sumoffset10-1200p="transform:translate(0%, -150%);">
+
+		<section class="contentContainerSlide09 col-sm-12">
+			<center><h4>WANBAO Oil and Grain Co LTD</h4></center><br>
+			<div class="col-sm-offset-3 col-sm-2" style="background-color:#dcdcdc; height:270px; padding-top:40px;">
+				<center>
+					<div style="font-size:19px; color:#436382; font-weight:700;">
+						LOCATION
+					</div><br><br>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						XAI - XAI
+					</div><br>
+					<div style="font-size:12px; color:#444; font-weight:900;">
+						GAZA PROVINCE
+					</div><br><br>
+					<div style="border-bottom:1px solid #848484; height:14px; width:100% !important;">
+						<center><img src="css/images/wanbao01.png"/></center>
+					</div>
+				</center>
+			</div>
+
+			<div class="col-sm-2" style="background-color:#eee; height:270px; padding-top:40px;">
+				<center>
+					<div style="font-size:19px; color:#436382; font-weight:700;">
+						EXTENTION
+					</div><br><br>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						900000
+					</div><br>
+					<div style="font-size:12px; color:#444; font-weight:900;">
+						HECTARS
+					</div><br><br>
+					<div style="border-bottom:1px solid #848484; height:14px; width:100% !important;">
+						<center><img src="css/images/wanbao02.png"/></center>
+					</div>
+				</center>
+			</div>
+
+			<div class="col-sm-2" style="background-color:#dcdcdc; height:270px; padding-top:40px;">
+				<center>
+					<div style="font-size:19px; color:#436382; font-weight:700;">
+						CROPS
+					</div><br>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						RICE
+					</div>
+					<div style="font-size:12px; color:#444; font-weight:900;">
+						AND
+					</div>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						CORN
+					</div><br>
+					<div style="border-bottom:1px solid #848484; height:14px; width:100% !important; margin-top:10px;">
+						<center><img src="css/images/wanbao03.png"/></center>
+					</div>
+				</center>
+			</div>
+		</section>
+
+	<!--keyframestop--> 
+	</section>
+	<!-- 10 END IMG.FULL-->
+
+
+	<!--Keyframes11$ IMG.FULL-->
+	<section id="slide11" class="col-sm-12 allPages"
+		data-0="transform:translate(0%, 100%);"
+		data-_offset11-1000p =""
+		data-_offset11-1100p= "transform:translate(0%, 0%);"
+		data-_sumoffset11-1200p=""
+		data-_sumoffset11-1300p="transform:translate(0%, -150%);">
+
+	<!--keyframestop--> 
+	</section>
+	<!-- 11 END IMG.FULL-->
+
+
+
+	<!--Keyframes12$ ANIM.IMAGES -->
+	 <section id="slide12" class="col-sm-12 allPages noPadding" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset12-1100p =""
+		data-_offset12-1200p= "transform:translate(0%, 0%);"
+		data-_sumoffset12-1300p=""
+		data-_sumoffset12-1400p="transform:translate(0%, -150%);">
+	 <!--keyframestop--> 
+
+	      <section class="contentContainer col-sm-4" id="imgFullTextScroll-text"
+	       data-_offset12-1200p="top:0%;" 
+	       data-_offset12-1400p="top:-150%">	       
+	        <article>
+		
+				<div class="articleAbstract">
+				It is in Xai-Xai, in the South of Mozambique, that China spent several years rankseclaiming the largest abandoned rice cultivation of the country.
+				</div>
+			            
+			    <div class="articleContent2">
+					The project, 20.000 hectares allocated, started in 2006 with a China-state owned company, Hubei Lianfeng, and in late 2011 it passed onto the private enterprise China Wanbao Oil and Grain Co Ltd., with an investment of US$250 million. The project recently received an additional US$10 million by the Fund of Cooperation to Develop Relations between China and Lusophone (Portuguese-speaking) Countries. 
+					Today, channels, roads, bridges and 7.000 hectares planted with rice and corn stands where before was mainly wasteland. Wanbao employs 1,340 people, of which 500 are Chinese, mainly engineers.
+					According to Wanbao’s manager, Mr Luo Haoping, the project promises great benefits for the country in terms of  food security and employment, although local communities and activists say they did not benefit from Wanbao’s production so far nor were consulted by the government before signing the deal with the investors.
+	   
+				</div>
+
+			</article>		
+	    </section>
+
+	   		<section id="slide12_1"
+	   		data-0="opacity:1;"
+	   		data-_offset12-1230p="" 
+	   		data-_offset12-1270p="opacity:0;" >
+			</section>
+	   		
+	   		<section id="slide12_2">
+			</section>
+		
+	</section>
+	<!-- 12 END ANIM.IMAGES-->
+
+
+	<!--Keyframes13$ VID.PLAYER -->
+	<section id="slide13" class="col-sm-12 noPadding allPages sfondoNeroSemplice" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset13-1200p =""
+		data-_offset13-1300p= "transform:translate(0%, 0%);"
+		data-_sumoffset13-1400p=""
+		data-_sumoffset13-1500p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 	
+       		<section class="containerVideo">
+					<video id="xaxairice_video" class=" video-js vjs-default-skin vjs-big-play-centered"
+					  controls preload="auto"
+					  data-setup='{"example_option":true}'>
+						<source src="data/video/montaggio_wanbao.m4v" type="video/mp4"> 
+						<source src="data/video/montaggio_wanbao.webmhd.webm" type="video/webm"> 
+						Video not supported 
+					</video>
+	       </section>
+	</section>
+	<!-- 13 END VID.PLAYER -->
+
+	<!--Keyframes14$ IMG.FULL.TEXT-SCROLL -->
+	<section id="slide14" class="col-sm-12 allPages" 
+	data-0="transform:translate(0%, 100%);"
+	data-_offset14-1300p =""
+	data-_offset14-1400p= "transform:translate(0%, 0%);"
+	data-_sumoffset14-1500p=""
+	data-_sumoffset14-1600p="transform:translate(0%, -150%);">
+	<!--keyframestop-->
+		<section class="contentContainer col-sm-4" id="imgFullTextScroll-text" 
+			data-0="opacity:0;"
+			data-_offset14-1320p= "opacity:0;"
+			data-_offset14-1400p="top:0%; opacity:1;"
+			data-_offset14-1700p="top:-150%">
+			<article>
+				<header>
+					<div class="titleArticle">
+						<h2><b>CONTROVERSIES</b></h2>
+					</div>
+				</header>
+			
+				<div class="articleAbstract">
+	            				Unfortunately, severe negative consequences for local communities came along with employment increase.
+ 				 </div>
+	            
+			            	<div class="articleContent">
+			  		First of all, Wanbao’s enterprise has not been subject to the required Environmental Impact Assessment (EIA), despite its large and intensive farming project being operational for over four years. <br>
+					In addition to this, according to local NGOs like FONGA and the Liga Moçambicana dos Direitos Humanos, around 10,000 families have been displaced by the project and can no longer grow food or graze their cattle.<br>
+					Juliana Porsani Jarkvist, a PhD fellow from Södertörn University in Sweden, believe around 6,000 people might have been impacted. Jarkavist did field work in Jovucaze area and ascertained at least 217 people have been affected by Wanbao and are now left with just 0.2 hectares each available for cultivation (the whole community used to have over 580 hectares for their subsistence).<br>
+					Furthermore, both NGOs also accuse the project of being led with lack of consultation with local communities. This is confirmed also by Gisela Zunguze of NGO Justicia Ambiental, who claims the "so-called consultation process" only consisted of meetings where government officials and Wanbao's representatives informed people that they were going to lose their machambas.<br>
+					But Wanbao did not just affected the life of Xai-Xai’s rural communities; even cemeteries have been despoiled to make way for new developments, as the company’s manager openly admitted. <br>
+				         
+				  </div>
+
+			</article>
+			
+		</section>
+	</section>
+	<!-- 14 END IMG.FULL.TEXT-SCROLL -->
+
+
+
+	<!--Keyframes15$ VID.PLAYER -->
+	<section id="slide15" class="col-sm-12 allPages noPadding sfondoNeroSemplice" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset15-1400p =""
+		data-_offset15-1500p= "transform:translate(0%, 0%);"
+		data-_sumoffset15-1600p=""
+		data-_sumoffset15-1700p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 	
+       		<section class="containerVideo col-sm-12s">
+			<video id="xai_xai_controversities_video" class="video-js vjs-default-skin vjs-big-play-centered"
+			  controls preload="auto"
+			  data-setup='{"example_option":true}'>
+				<source src="data/video/camponeises_xaixai_mule.m4v" type="video/mp4"> 
+				<source src="data/video/camponeises_xaixai_mule.webmhd.webm" type="video/webm"> 
+				Video not supported 
+			</video>
+	       </section>
+	</section>
+	<!-- 15 END VID.PLAYER -->
+
+	<!--Keyframes16$ IIMG.FULL TO REDO-->
+	<section id="slide16" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset16-1500p =""
+		data-_offset16-1600p= "transform:translate(0%, 0%);"
+		data-_sumoffset16-1700p=""
+		data-_sumoffset16-1800p="transform:translate(0%, -150%);">
+
+		<section class="contentContainerSlide09 col-sm-12">
+			<center><h4>BANANALANDIA</h4></center><br>
+			<div class="col-sm-offset-3 col-sm-2" style="background-color:#dcdcdc; height:270px; padding-top:40px;">
+				<center>
+					<div style="font-size:19px; color:#436382; font-weight:700;">
+						LOCATION
+					</div><br><br>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						BOANE
+					</div><br>
+					<div style="font-size:12px; color:#444; font-weight:900;">
+						MAPUTO PROVINCE
+					</div><br><br>
+					<div style="border-bottom:1px solid #848484; height:14px; width:100% !important;">
+						<center><img src="css/images/wanbao01.png"/></center>
+					</div>
+				</center>
+			</div>
+
+			<div class="col-sm-2" style="background-color:#eee; height:270px; padding-top:40px;">
+				<center>
+					<div style="font-size:19px; color:#436382; font-weight:700;">
+						EXTENTION
+					</div><br><br>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						1500
+					</div><br>
+					<div style="font-size:12px; color:#444; font-weight:900;">
+						HECTARS
+					</div><br><br>
+					<div style="border-bottom:1px solid #848484; height:14px; width:100% !important;">
+						<center><img src="css/images/wanbao02.png"/></center>
+					</div>
+				</center>
+			</div>
+
+			<div class="col-sm-2" style="background-color:#dcdcdc; height:270px; padding-top:40px;">
+				<center>
+					<div style="font-size:19px; color:#436382; font-weight:700;">
+						CROPS
+					</div><br>
+					<br>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						BANANA
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div style="border-bottom:1px solid #848484; height:14px; width:100% !important; margin-top:-3px;">
+						<center><img src="css/images/wanbao03.png"/></center>
+					</div>
+				</center>
+			</div>
+		</section>
+
+
+	<!--keyframestop--> 
+	</section>
+	<!-- 16 END IMG.FULL-->
+
+
+
+
+
+	<!--Keyframes17$ IMG.FULL -->
+	<section id="slide17" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset17-1600p =""
+		data-_offset17-1700p= "transform:translate(0%, 0%);"
+		data-_sumoffset17-1800p=""
+		data-_sumoffset17-1900p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+	</section>
+	<!-- 17 END IMG.FULL-->
+
+
+	<!--Keyframes18$ ANIM.IMAGES -->
+	 <section id="slide18" class="col-sm-12 allPages noPadding" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset18-1700p =""
+		data-_offset18-1800p= "transform:translate(0%, 0%);"
+		data-_sumoffset18-1900p=""
+		data-_sumoffset18-2000p="transform:translate(0%, -150%);">
+	 <!--keyframestop--> 
+
+	     <section class="contentContainer col-sm-4" id="imgFullTextScroll-text"
+	       data-_offset18-1800p="top:0%;" 
+	       data-_offset18-2000p="top:-150%">	       
+	        <article class="articleWithMargin">
+		
+				<div class="articleAbstract">
+				Ten years ago, when Bananalandia was founded in Boane, a district close to Maputo,
+				</div>
+			            
+			    <div class="articleContent2">
+					South African entrepreneur Peter A. Gouws, Mozambique had to import bananas from neighbouring countries. Bananalandia managed to reverse the situation. Today, it covers all the demand of the Southern part of Mozambique, as well 15% of South African market. 
+					<br>
+					The current production per year is impressive: each hectare provides the company with 2.700 boxes of 18 kg. Each box is sold for US$ 7, resulting in 72.9 million kilos of bananas being produced per year allowing a turnover of US$ 28.3 million.
+					<br>
+					The plantation covers over 1.500 hectares splitted in three areas and accounting to 3.5 million plants. Banalandia employs 3.000 local people and pays 10 million meticais ($328.000) in monthly salaries.
+				</div>
+
+			</article>		
+	    </section>
+
+	   		<section id="slide18_1" 
+	   		data-0="opacity:1;"
+	   		data-_offset18-1830p="" 
+	   		data-_offset18-1845p="opacity:0;" >
+			</section>
+	   		
+	   		<section id="slide18_2">
+			</section>
+	</section>
+	<!-- 18 END ANIM.IMAGES-->
+
+
+
+	<!--Keyframes19$ VID.PLAYER -->
+	<section id="slide19" class="col-sm-12 allPages noPadding sfondoNeroSemplice" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset19-1800p =""
+		data-_offset19-1900p= "transform:translate(0%, 0%);"
+		data-_sumoffset19-2000p=""
+		data-_sumoffset19-2100p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 	
+       		<section class="containerVideo col-sm-12s">
+			<video id="xaixaiproject_video" class="video-js vjs-default-skin vjs-big-play-centered"
+			  controls preload="auto"
+			  data-setup='{"example_option":true}'>
+				<source src="data/video/bananalandia.m4v" type="video/mp4"> 
+				<source src="data/video/bananalandia.webmhd.webm" type="video/webm"> 
+				Video not supported 
+			</video>
+	       </section>
+	</section>
+	<!-- 19 END VID.PLAYER -->
+
+	<!--Keyframes20$ IMG.FULL.TEXT-SCROLL -->
+	<section id="slide20" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset20-1900p =""
+		data-_offset20-2000p= "transform:translate(0%, 0%);"
+		data-_sumoffset20-2100p=""
+		data-_sumoffset20-2200p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<section class="contentContainer col-sm-4" id="imgFullTextScroll-text"
+			data-_offset20-2000p="top:0%;" 
+			data-_offset20-2200p="top:-150%">
+				
+				<article>
+		
+				<div class="articleAbstract">
+				Bananalandia has impacted the areas surrounding the plantation. Positively, providing jobs and rising the microeconomy. 
+				</div>
+			            
+			    <div class="articleContent2">
+					According to the Gegege area’s inhabitants, in a recent enlargement Bananalandia cut them off the Umbelúzi River, causing the doubling of the distance to get there, now of 1.5 km. "It used to be easy to reach the river on foot, now the distances are larger and it’s hard for women to get there", says Lino Pita Nassone, a trade union representative of Unac (National Farmers’ Union).
+					<br>
+					For it, G-egege inhabitants contracted the State’s aqueduct, but as soon as they could not pay bills in time, water supply was cut off. The close-by springs are polluted, and many people are affected by gastroenteric diseases and other health issues.
+					<br>
+					The increase difficulty of access to water suffered by local communities of farmers clashes with Bananalandia’s large usage of resources to irrigate its plantations: six million cubic meter of water per day, resulting in up to two billion cubic meters of water per year which is pumped up from the nearby Limpopo river.
+					<br>
+					"We do our best to comply with the needs of the surrounding villages", says Bananalandia’s Peter Gouws, "but it’s impossible to make everybody happy". But responsibility lies mainly with the local government, since villagers have reported the problem and never received a reply. Nor the government seems to have asked the company for a resolution of the problem.
+				</div>
+
+			</article>		
+	    </section>
+	</section>
+	<!-- 20 END IMG.FULL.TEXT-SCROLL -->
+
+	<!--Keyframes21$ VID.PLAYER -->
+	<section id="slide21" class="col-sm-12 noPadding allPages sfondoNeroSemplice" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset21-2000p =""
+		data-_offset21-2100p= "transform:translate(0%, 0%);"
+		data-_sumoffset21-2200p=""
+		data-_sumoffset21-2300p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 	
+       		<section class="containerVideo col-sm-12s">
+			<video id="xai_xai_controversities_video2" class="video-js vjs-default-skin vjs-big-play-centered"
+			  controls preload="auto"
+			  data-setup='{"example_option":true}'>
+				<source src="data/video/boane.m4v" type="video/mp4"> 
+				<source src="data/video/boane.webmhd.webm" type="video/webm"> 
+				Video not supported 
+			</video>
+	       </section>
+	</section>
+	<!-- 21 END VID.PLAYER -->
+
+	<!--Keyframes22$ IMG.FULL TO REDO-->
+	<section id="slide22" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset22-2100p =""
+		data-_offset22-2200p= "transform:translate(0%, 0%);"
+		data-_sumoffset22-2300p=""
+		data-_sumoffset22-2400p="transform:translate(0%, -150%);">
+
+		<section class="contentContainerSlide09 col-sm-12">
+			<center><h4>Compañia AgroSocial Sammartini</h4></center><br>
+			<div class="col-sm-offset-3 col-sm-2" style="background-color:#dcdcdc; height:270px; padding-top:40px;">
+				<center>
+					<div style="font-size:19px; color:#436382; font-weight:700;">
+						LOCATION
+					</div><br><br>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						XAI - XAI
+					</div><br>
+					<div style="font-size:12px; color:#444; font-weight:900;">
+						GAZA PROVINCE
+					</div><br><br>
+					<div style="border-bottom:1px solid #848484; height:14px; width:100% !important;">
+						<center><img src="css/images/wanbao01.png"/></center>
+					</div>
+				</center>
+			</div>
+
+			<div class="col-sm-2" style="background-color:#eee; height:270px; padding-top:40px;">
+				<center>
+					<div style="font-size:19px; color:#436382; font-weight:700;">
+						EXTENTION
+					</div><br><br>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						1000
+					</div><br>
+					<div style="font-size:12px; color:#444; font-weight:900;">
+						HECTARS
+					</div><br><br>
+					<div style="border-bottom:1px solid #848484; height:14px; width:100% !important;">
+						<center><img src="css/images/wanbao02.png"/></center>
+					</div>
+				</center>
+			</div>
+
+			<div class="col-sm-2" style="background-color:#dcdcdc; height:270px; padding-top:40px;">
+				<center>
+					<div style="font-size:19px; color:#436382; font-weight:700;">
+						CROPS
+					</div><br>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						GRAIN
+					</div>
+					<div style="font-size:12px; color:#444; font-weight:900;">
+						AND
+					</div>
+					<div style="font-size:35px; color:#444; font-weight:200; ">
+						CORN
+					</div><br>
+					<div style="border-bottom:1px solid #848484; height:14px; width:100% !important; margin-top:10px;">
+						<center><img src="css/images/wanbao03.png"/></center>
+					</div>
+				</center>
+			</div>
+		</section>
+
+	<!--keyframestop--> 
+	</section>
+	<!-- 22 END IMG.FULL-->
+
+
+	<!--Keyframes23$ IMG.FULL TO REDO-->
+	<section id="slide23" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset23-2200p =""
+		data-_offset23-2300p= "transform:translate(0%, 0%);"
+		data-_sumoffset23-2400p=""
+		data-_sumoffset23-2500p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+	</section>
+	<!-- 23 END IMG.FULL-->
+
+	<!--Keyframes24$ ANIM.IMAGES -->
+	 <section id="slide24" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset24-2300p =""
+		data-_offset24-2400p= "transform:translate(0%, 0%);"
+		data-_sumoffset24-2500p=""
+		data-_sumoffset24-2600p="transform:translate(0%, -150%);">
+	 <!--keyframestop--> 
+
+	       <section class="contentContainer col-sm-4"
+	       data-_offset24-2400p="top:0%;" 
+	       data-_offset24-2600p="top:-150%">	       
+	            <article class="articleWithMargin">
+		
+					<div class="articleAbstract">
+					Not all land acquisitions can be labelled as land grabbing. 
+					</div>
+				            
+				    <div class="articleContent2">
+						This is the case with the Italian agricultural entrepreneur Michele Sammartini that can be rather be seen as a responsible investment. 
+						<br>
+						Compania AgroSocial Sammartini produces corn and grain on 1.000 hectares while employing 50 people. Thanks to fruitful preliminary consultations with the local community, the company is well integrated in the territory of Xai-Xai.
+						<br>
+						Sammartini is aware that "occupying land, although free and unfarmed, puts social equilibriums and traditions upside-down." For this reason, he believes it is crucial to share the preliminary project with the local community and provide some in exchange. A requital that does not need to be economical, but rather providing jobs and know-how in order to help the community developing in entrepreneurship and richness, yet in the respect of the rural dimension.
+
+					</div>
+				</article>		
+	    	</section>
+
+	    	<section id="slide24_1" 
+	   		data-0="opacity:1;"
+	   		data-_offset24-2430p="" 
+	   		data-_offset24-2470p="opacity:0;" >
+			</section>
+	   		
+	   		<section id="slide24_2">
+			</section>
+
+	</section>
+	<!-- 24 END ANIM.IMAGES-->
+
+
+
+	<!--Keyframes25$ VID.PLAYER -->
+	<section id="slide25" class="col-sm-12 allPages noPadding sfondoNeroSemplice" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset25-2400p =""
+		data-_offset25-2500p= "transform:translate(0%, 0%);"
+		data-_sumoffset25-2600p=""
+		data-_sumoffset25-2700p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 	
+       		<section class="containerVideo col-sm-12s">
+			<video id="sammartincorriere_video" class="video-js vjs-default-skin vjs-big-play-centered"
+			  controls preload="auto"
+			  data-setup='{"example_option":true}'>
+				<source src="data/video/sammartini.mp4" type="video/mp4"> 
+				<source src="data/video/sammartini.webmhd.webm" type="video/webm"> 
+				Video not supported 
+			</video>
+	       </section>
+	</section>
+	<!-- 25 END VID.PLAYER -->
+
+	<!--Keyframes26$ IMG.FULL.TEXT-->
+	<section id="slide26" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset26-2500p =""
+		data-_offset26-2600p= "transform:translate(0%, 0%);"
+		data-_sumoffset26-2700p=""
+		data-_sumoffset26-2800p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<article class="title_one">
+			<header>
+				<h1 class="opacitaTesto titoloHomeH1"><b>PRO</b>SAVANA</h1>
+				<h2>International cooperation or post land grabbing?</h2>
+			</header>
+		</article>
+	</section>
+	<!-- 26 END IMG.FULL.TEXT-->
+
+	<!--Keyframes27$ VID.PLAYER.SIDE-TEXT -->
+	<section id="slide27" class="col-sm-12 allPages sfondoBianco"
+		data-0="transform:translate(0%, 100%);"
+		data-_offset27-2600p =""
+		data-_offset27-2700p= "transform:translate(0%, 0%);"
+		data-_sumoffset27-2800p=""
+		data-_sumoffset27-2900p="transform:translate(0%, -150%);">
+		<!--keyframestop--> 
+	      <section class="contentContainer col-sm-5" >
+		      <video id="hanlon_video" class="video-js vjs-default-skin vjs-big-play-centered"
+			  controls preload="auto"
+			  data-setup='{"example_option":true}'>
+					<source src="data/video/hanlon.m4v" type="video/mp4"> 
+					<source src="data/video/hanlon.webmhd.webm" type="video/webm"> 
+					Video not supported 
+		       </video>
+
+	       </section>
+	       
+	       <section class="col-sm-offset-5 col-sm-3 containerVideoConTesto" style="margin-top:10%;">
+				<article>
+				<header>
+					<div class="titleArticle">
+						<h2><b>VISIONS AND STRATEGIES</b></h2>
+					</div>
+				</header>
+			
+				<div class="articleAbstract">
+					Mozambique does need investments, but of a different scale
+				</div>
+			            
+			    	<div class="articleContent2">
+					An incredibly great portion of Mozambican arable land, in an area known as Nacala Corridor, will be interested by the ProSavana, a controversial program drawn by the International Cooperation. The aim is the agricultural development of Mozambique and the project will unroll trilaterally with Japan and Brazil.
+				</div>
+
+				</article>		
+			</section>
+
+	</section>
+	<!-- 27 END VID.PLAYER.SIDE-TEXT -->
+
+
+	<!--Keyframes28$ IMG.FULL.TEXT-->
+	<section id="slide28" class="col-sm-12 allPages sfondoBianco" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset28-2700p =""
+		data-_offset28-2800p= "transform:translate(0%, 0%);"
+		data-_sumoffset28-2900p=""
+		data-_sumoffset28-3000p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<section class="contentContainer col-sm-4" id="imgFullTextScroll-text" 
+			data-_offset28-2800p="top:0%;"
+			data-_offset28-3000p="top:-200%">
+			
+			<article>
+			
+				<div class="articleAbstract">
+					Real numbers about the actual surface interested by the project lack.  
+				</div>
+	            
+				<div class="articleContent3">
+	            	As civil society witnessed, contradiction has characterized the debate, with  statements of authorities describing the total area first as 14 million hectares, then as 10 million and, currently, even denying having a specific slot of land allocated.
+		
+					<img src="images/slide28_pie.png" />
+				
+	            	But lack of transparency goes beyond the debate about how much land is actually allocated to the Program. ProSavana is entangled with shady aspects that Mozambican, Japanese and Brazilian authorities, when addressed, failed to clarify. 
+	            	<br><br><br>
+				</div>
+			</article>			
+		</section>
+	</section>
+	<!-- 28 END IMG.FULL.TEXT-->
+
+
+
+	<!--Keyframes29$IMG.GALLERY-->
+	<section id="slide29" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset29-2800p =""
+		data-_offset29-2900p= "transform:translate(0%, 0%);"
+		data-_sumoffset29-3000p=""
+		data-_sumoffset29-3100p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<section class="title_with_grid flexslider sfondoBlack">
+			<ul class="slides">
+			    <li id="liSlide29img01"><p class="flex-caption">Calisto Bias - coordinator of ProSavana
+</p></li>
+			    <li id="liSlide29img02"><p class="flex-caption">Ryuichi Nasu - chief officer of JICA in Mozambique
+ </p></li>
+			    <li id="liSlide29img03"><p class="flex-caption">Thais Braga - coordinator of ProSavana for ABC </p></li>
+			    <li id="liSlide29img04"><p class="flex-caption">Ligia Maria Scherer - Brazilian Ambassador in Mozambique
+ </p></li>
+			</ul>
+		</section>	
+	</section>
+	<!-- 29 END IMG.GALLERY-->
+
+
+	<!--Keyframes30$ MULTIPLE.DIV -->
+  	<section id="slide30" class="col-sm-12 allPages sfondoScuro" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset30-2900p =""
+		data-_offset30-3000p= "transform:translate(0%, 0%);"
+		data-_sumoffset30-3100p=""
+		data-_sumoffset30-3200p="transform:translate(0%, -150%);">
+  	<!--keyframestop--> 
+  		
+
+  		<section class="row">
+			<div id="mdleft" class="col-sm-6" >
+	  			<div id="mdleftheader">
+	  				<div class="col-sm-3 toggleButton toggleButtonSelected" id="mdimg1" onClick="javascript: changeDiv(1)">
+	  					<center>
+	  						<img src="images/slide30_ico1.png" />
+	  					</center>
+	  				</div>
+
+	  				<div class="col-sm-3 toggleButton" id="mdimg2" onClick="javascript: changeDiv(2)">
+	  					<center>
+	  						<img src="images/slide30_ico2.png" />
+	  					</center>
+	  				</div>
+
+	  				<div class="col-sm-3 toggleButton" id="mdimg3" onClick="javascript: changeDiv(3)">
+	  					<center>
+	  						<img src="images/slide30_ico3.png" />
+	  					</center>
+	  				</div>
+	  			</div> <!-- mdleftheader-->			
+	  		</div> <!-- mdleft-->
+  		</section>
+
+  		
+
+  		<div  class="col-slide-30" id="mdright">
+	  		<div id="mdrighttextcontainer">
+	  			<p></p>
+		  		<span id="mdTextHeader">
+		  		</span>
+
+		  		<span id="mdTextSubHeader">
+		  		</span>
+
+		  		<span id="mdText">
+		  		</span>
+
+		  	</div><!-- mdrighttextcontainer-->  	 
+  		</div> <!-- END mdright-->
+
+	  	<!-- Insert texts below-->
+	  	<span id="md_header1" class="col-md-6" style ="display:none;">
+	  		<h4 style="padding: 10px 0px 5px 15px;"><b>DISPLACEMENTS</b></h4>
+	  	</span>
+			
+			<span id="md_subheader1" style ="display:none;"> 
+			  	<div class="row">
+				  	<div class="col-sm-6" style="font-size: 20px; font-weight: 100; line-height: 24px; padding: 0px 0px 10px 30px;">
+				  		That of displacement is one of the greatest problems caused by large land acquisitions.<br>
+				  	</div>
+				</div>
+			</span>
+
+	  	
+			<span id="md_text1" style ="display:none;">
+				<div class="col-sm-6">
+					<p style="font-size: 20px; font-weight: 100; line-height: 24px;">
+						On this very sensitive issue, officials of ProSavana Program contradicted themselves during the same public meeting, as witnessed by members of the Mozambican civil society who attended the event. When asked, competent authorities say displacements could eventually take place, and admitting it seems the least, considering the incredibly high density of inhabitants of the Nacala Corridor.
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<p style="font-size: 20px; font-weight: 100; line-height: 24px;">
+					 Possible displaced people will be compensated according to the law - they say. Though, we are talking of a same law that was not adequately respected in numerous - even recent - reported cases of land acquisition. 
+					</p>
+				</div>
+			</span>
+
+			
+			<span id="md_header2" class="col-md-6" style ="display:none;">
+	  			<h4 style="padding: 10px 0px 5px 15px;"><b>PRIVATE INVESTORS</b></h4>
+	  		</span>
+			
+			<span id="md_subheader2" style ="display:none;"> 
+			  	<div class="row">
+				  	<div class="col-sm-6" style="font-size: 20px; font-weight: 100; line-height: 24px; padding: 0px 0px 10px 30px;">
+						Authorities assure us ProSavana’s aim is that of "food security and the promotion of new agricultural models
+				  	</div>
+				</div>
+			</span>
+			<span id="md_text2" style ="display:none;">
+				<div class="col-sm-6">
+					<p style="font-size: 20px; font-weight: 100; line-height: 24px;">
+						and not the imposition of specific crops" following a "win-win" approach of cooperation in which private investors won’t rule. However, the minutes of the official meetings that generated the Program disprove the most recent statements, reporting "crops for biofuel production" as "new crops to be introduced". Moreover, a graph drawn by the Japanese 
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<p style="font-size: 20px; font-weight: 100; line-height: 24px;">
+						International Cooperation Agency (JICA), and reported in a study by the Future Agricultures Consortium, highlights the participation of private investors (not only in the agricultural field) as one of the major benefits that Pro SAVANA will bring to Japan and Brazil - together with food security, yes, but of Japan, rather than Mozambique.
+					</p>
+				</div>
+			</span>
+
+	  		<span id="md_header3" class="col-md-6" style ="display:none;">
+	  			<h4 style="padding: 10px 0px 5px 15px;"><b>CONSULTATION</b></h4>
+	  		</span>
+			
+			<span id="md_subheader3" style ="display:none;"> 
+			  	<div class="row">
+				  	<div class="col-sm-6" style="font-size: 20px; font-weight: 100; line-height: 24px; padding: 0px 0px 10px 30px;">
+						ProSavana is also characterised by  the nearly total lackness of a proper consultation process.
+				  	</div>
+				</div>
+			</span>
+			<span id="md_text3" style ="display:none;">
+				<div class="col-sm-6">
+					<p style="font-size: 20px; font-weight: 100; line-height: 24px;">
+						Mozambicans learned about the Program only through a leak of the Master Plan and thanks to information coming from abroad, "and not from national authorities", as denounced by Fernando Lima, Director of the most important opposition paper of the country, Savana. The very few meetings that can be proved having taken place (competent authorities provided only two, quite generic, press releases)
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<p style="font-size: 20px; font-weight: 100; line-height: 24px;">
+						 have been labelled by civil society as promotional only. It might not be a case that official documents talk about "annual or semi-annual meetings" which "purpose" is to "form consensus on the Program." Local NGOs believe this not to be a real consultation process. For them, consultation process is a very different thing. It is one that gives voice to Mozambican people in a bottom-up process.
+					</p>
+				</div>
+			</span>
+	  	</section> 
+  	<!-- 30 MULTIPLE.DIV -->
+
+
+
+	<!--Keyframes31$ IMG.FULL-->
+	<section id="slide31" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset31-3000p =""
+		data-_offset31-3100p= "transform:translate(0%, 0%);"
+		data-_sumoffset31-3200p=""
+		data-_sumoffset31-3300p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+	</section>
+	<!-- 31 END IMG.FULL-->
+
+	<!--Keyframes32$ VID.PLAYER.SIDE-TEXT -->
+	<section id="slide32" class="col-sm-12 allPages sfondoBianco"
+		data-0="transform:translate(0%, 100%);"
+		data-_offset32-3100p =""
+		data-_offset32-3200p= "transform:translate(0%, 0%);"
+		data-_sumoffset32-3300p=""
+		data-_sumoffset32-3400p="transform:translate(0%, --150%);">
+		<!--keyframestop--> 
+	      <section class="contentContainer col-sm-5" >
+		      <video id="video32" class="video-js vjs-default-skin vjs-big-play-centered"
+			  controls preload="auto"
+			  data-setup='{"example_option":true}'>
+					<source src="data/video/prosavana.m4v" type="video/m4v"> 
+					<source src="data/video/prosavana.webmhd.webm" type="video/webm"> 
+					Video not supported 
+		       </video>
+
+	       </section>
+	       
+	       <section class="col-sm-offset-5 col-sm-3 containerVideoConTesto" style="margin-top:10%;"
+	         	data-_offset32-3230p="top:0%;" 
+	       	data-_sumoffset32-3400p="top:-150%">
+
+				<article>
+				<header>
+				<div class="titleArticle">
+					<h2><b>POST LAND-GRABBING</b></h2>
+				</div>
+				</header>
+			
+				<div class="articleAbstract">
+					Is the Prosavana post land-grabbing?
+				</div>
+			            
+			    	<div class="articleContent2">
+					Considering all the shady sides and ambiguities the project embeds, civil society labelled ProSavana as a gigantic operation of land grabbing. But the Program does not envisage direct taking of land. It rather foresees contract farming schemes, were large corporations and investors transfer technologies and known-how to networks of local farmers to improve productions. Yield is then bought by the investor and placed on the market. Farmers are provided with loans, which are granted by specific contract conditions. 
+					<br>
+					Most often, contract farming schemes result in intensive monocultures production and price increase. According to academics, such contracts may create axifiating indebtment and dependency mechanisms, while setting dooming scenarios	 of what they define as post-landgrabbing. The odds seem to turn only in favour of few (eg. large investors, a handful of farmers) while most of local communities get potentially shaken socially, economically and environmentally.
+				</div>
+
+				</article>		
+			</section>
+
+	</section>
+	<!-- 32 END VID.PLAYER.SIDE-TEXT -->
+
+	<!--Keyframes33$ INTRO-->
+  	<section id="slide33" class="col-sm-12 allPages sfondoBiancoSemplice"
+		data-0="transform:translate(0%, 100%);"
+		data-_offset33-3200p =""
+		data-_offset33-3300p= "transform:translate(0%, 0%);"
+		data-_sumoffset33-3400p=""
+		data-_sumoffset33-3500p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<div class="testoSempliceSlide06 col-md-12">
+			<p
+			data-0="opacity:0;"
+			data-_offset33-3250p="opacity:0;"
+			data-_offset33-3300p="opacity:1;">
+
+			We are faced with a <span class="testoArancio">	multi-faceted</span> <br>
+			phenomenon that generates a <br>
+			<span class="testoArancio">global debate</span>  engaging civil <br>
+			society, authorities, private <br>
+			investors and the media. 
+
+			</p>
+		</div>
+	</section>
+	<!-- 33 END INTRO -->
+
+
+	<!--Keyframes34$MAP -->
+	<div id="map" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset34-3300p =""
+		data-_offset34-3400p= "transform:translate(0%, 0%);"
+		data-_sumoffset34-3500p=""
+		data-_sumoffset34-3600p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+
+	<div class="buttonMapShow" onClick="javascript:toggleMapBox();">
+	   </div>
+
+	   <div class="buttonMapShowInfo" onClick="javascript:toggleMapBox();">
+	    Show Information
+	   </div>
+	</div>
+  	<!-- 34 MAP -->
+
+  	<!--Keyframes35$ IMG.FULL  TO REDO-->
+  	<section id="slide35" class="col-sm-12 allPages sfondoBianco"
+		data-0="transform:translate(0%, 100%);"
+		data-_offset35-3400p =""
+		data-_offset35-3500p= "transform:translate(0%, 0%);"
+		data-_sumoffset35-3600p=""
+		data-_sumoffset35-3700p="transform:translate(0%, -150%);">
+	<!--keyframestop--> 
+		<div class="testoSempliceSlide35 col-md-12">
+			<p
+			data-0="opacity:0;"
+			data-_offset35-3450p="opacity:0;"
+			data-_offset35-3500p="opacity:1;">
+			<h4><span class="testoArancio"><b>CONCLUSIONS</b></span></h4>
+			Il caso del Mozambico è il tassello di un enorme puzzle. Un puzzle fatto di terre e comunità rurali, <br>
+			businessmen e attivisti della società civile, istituzioni internazionali, governi locali e sindacati. <br>
+			Un intreccio di interessi che determinano decisioni in grado di stravolgere le tradizioni dei popoli<br>
+			che quelle terre le hanno sempre abitate. È lecito sconvolgere gli equilibri di comunità millenarie <br>
+			nel segno del ‘progresso’? È giusto conservare acriticamente tradizioni e strutture sociali <br>
+			che non lasciano spazio allo sviluppo e al miglioramento della qualità della vita dei popoli? <br>
+			La soluzione si trova, come al solito, nel mezzo. «Tutto quello che la gente vuole è un lavoro»,<br>
+			 sostiene Joseph Hanlon, ricercatore presso la London School of Economics. <br>
+			 Un lavoro che però non divori l’identità culturale dei popoli e che rispetti i diritti umani delle comunità, <br>
+			 dando loro voce in capitolo in decisioni che rivoluzionano la loro vita. 
+
+			
+			</p>
+		</div>
+	</section>
+	<!-- 35 END IMG.FULL-->
+
+	<!--Keyframes36$ TEXT.CREDITS-->
+	<section id="slide36" class="col-sm-12 allPages" 
+		data-0="transform:translate(0%, 100%);"
+		data-_offset36-3500p =""
+		data-_offset36-3600p= "transform:translate(0%, 0%);">
+	<!--keyframestop--> 
+		<div class="col-sm-12 row">
+			<div class="testoCentrato creditstitles">
+				<h2>A PROJECT BY</h2>
+			</div>
+		</div>
+
+		<div class="col-sm-12 row nomiCredits">
+			<div class="testoCentrato">
+				<p >
+					<span style="color:white; font-weight: 700;"> JACOPO</span> <span style="color:white;">OTTAVIANI</span>   
+					<span style="color:white; font-weight: 700; padding-left:30px; "> ISACCO</span> <span style="color:white;">CHIAF</span>
+					<span style="color:white; font-weight: 700; padding-left:30px; "> ANDREA</span> <span style="color:white;">FAMA</span>
+					<span style="color:white; font-weight: 700; padding-left:30px; "> CECILIA</span> <span style="color:white;">ANESI</span>
+				</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-3 col-sm-offset-3 colonnaCreditsSx">
+				<p>
+					Texts <br>
+					Graphic Design <br>
+					Crowdsourced Map <br>
+					Research <br>
+					Video and Photography <br>
+					Development <br>
+					
+				</p>
+			</div>
+			<div class="col-xs-3 colonnaCreditsDx">
+				<p>
+					Andrea Fama, Cecilia Anesi, Jacopo Ottaviani
+ <br>
+					Isacco Chiaf <br>
+					Jacopo Ottaviani <br>
+					Andrea Fama, Cecilia Anesi, Jacopo Ottaviani <br>
+					Isacco Chiaf, Cecilia Anesi <br>
+					Nicolò Paternoster, Daniele Meli <br>
+					
+				</p>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="testoCentrato creditstitles">
+				<h2>SPECIAL THANKS</h2>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-6 col-md-offset-3 nomiCredits testoCentrato">
+				<p >
+					Celia Santos, Stefano Marmorato, Alessandro Campione, Paola Rolletta, Matteo Fagotto, Joao Feijo, Stephane Derweduwen, Milo Gasparini, “Broken Glass” Maputo Taxi Driver 
+				</p>
+			</div>
+		</div>
+
+		<div class="col-xs-12" id="creditsfooter">
+			<p id="creditsfootertext">2014 ©</p>
+		</div>
+	</section>
+	<!-- 36 END TEXT.CREDITS-->
+  	
+	
+  </body>
+</html>  
+
