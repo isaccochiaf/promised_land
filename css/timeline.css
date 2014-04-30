@@ -1,0 +1,103 @@
+.timelinecontent
+	{
+	-moz-box-shadow:    inset  0  15px 15px -15px #000, 
+                        inset  0 -15px 15px -15px #000;
+    -webkit-box-shadow: inset  0  15px 15px -15px #000, 
+                        inset  0 -15px 15px -15px #000;
+     box-shadow:        inset  0  15px 15px -15px #000, 
+                        inset  0 -15px 15px -15px #000;
+
+	margin-top: 8%;
+	height: 60%;
+	padding-right:20px; 
+	padding-left:20px; 
+	overflow:auto; 
+	background:#fff;
+	}
+
+.timelinecontent p:nth-child(even)
+	{
+	color:#999; 
+	font-family:Georgia,serif;
+	font-size:17px; 
+	font-style:italic;
+	}
+.timelinecontent p:nth-child(3n+0)
+	{
+	color:#c96;
+	}
+		
+.timelinecontent img{ width:470px;}
+		
+		
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color:#CCC;
+    border-radius: 7px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color:#95B1CE;
+    border-radius: 7px;
+    
+}
+#timeline{
+	background-color: whitesmoke;
+}
+
+/*Accordion*/
+#timeline-wrapper {
+	width: 470px;
+	}
+
+.accordionButton {	
+	width: 470px;
+	float: left;
+	background: #666;
+	color:#FFF;
+	font-weight:100;
+	font-size:10px;
+	cursor: pointer;
+	padding:10px;
+	margin-top:2px;
+	opacity:0.7;
+	
+	}
+	
+.accordionButton p { 
+	font-size:18px; 
+	color:#111;
+}
+
+.accordionButton:hover {	
+	background: #999;
+	color:#222;
+}
+	
+
+.accordionContent 
+{	
+	width: 470px;
+	float: left;
+	background: #95B1CE;
+	display: none;
+	background-image:url(images/bkg01.png);
+	background-repeat:no-repeat;
+	padding:10px; 
+	font-family: 'Roboto', sans-serif; 
+	font-weight:100; f
+	font-size:12px; 
+	}
+
+.accordionContent h2
+{  
+	font-family: 'Roboto', sans-serif; 
+	font-weight:100; 
+	font-size:26px; 
+}
