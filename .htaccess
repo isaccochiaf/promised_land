@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "restricted area"
-AuthUserFile https://github.com/isaccochiaf/promised_land/blob/gh-pages/.htpasswd
+AuthUserFile http://isaccochiaf.github.io/promised_land/.htpasswd
 require valid-user
